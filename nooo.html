@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="no.css">
+        
+    </head> 
+    <body>
+        <div class="container">
+            <div >
+                <h1 class = "header_text">Thik ha... nahi jana to chor do...🥺</h1>
+            </div>
+            <div class="gif_container">
+                <img src="https://media0.giphy.com/media/T86i6yDyOYz7J6dPhf/giphy.gif" alt="Cute animated illustration">
+            </div>
+            <div class="buttons">
+                <button class="btn" id="yesButton" onclick="nextpage()">Thik ha Chalo</button>
+            <script>// script.js
+    
+                function nextpage(choice) {
+                    if (choice === 'yes') {
+                        window.location.href = 'yes.html'; // Change to the page for "Chalo"
+                    }
+                }
+                
+                document.getElementById('yesButton').onclick = function() {
+                    nextpage('yes');
+                };
+                </script>
+    
+        </div>
+       
+    </body> 
+</html>

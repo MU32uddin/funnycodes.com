@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1 class="header_text"> Kal chala Panipuri Khana??</h1>
+        
+        </div>
+        <div class="gif_container">
+            <img src="https://media0.giphy.com/media/T86i6yDyOYz7J6dPhf/giphy.gif" alt="Cute animated illustration" alt="Cute animated illustration">
+        </div>
+        <div class="buttons">
+            <button class="btn" id="yesButton" onclick="nextpage()">Chalo</button>
+            <button class="btn1" id="nobutton" onclick="nextpage()">Nahi jana</button>
+        
+        <script>// script.js
+
+            function nextpage(choice) {
+                if (choice === 'yes') {
+                    window.location.href = 'yes.html'; // Change to the page for "Chalo"
+                } else {
+                    window.location.href = 'no.html'; // Change to the page for "Nahi"
+                }
+            }
+            
+            document.getElementById('yesButton').onclick = function() {
+                nextpage('yes');
+            };
+            
+            document.getElementById('noButton').onclick = function() {
+                nextpage('no');
+            };
+            </script>
+
+        </div>
+    </div>
+</body>
+</html>
